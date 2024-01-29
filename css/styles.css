@@ -42,6 +42,11 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --cooler-palette1: 13, 27, 35;
+  --cooler-palette2: 27, 38, 59;
+  --cooler-palette3: 65, 90, 119;
+  --cooler-palette4: 119, 141, 169;
+  --cooler-palette5: 224, 225, 221;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -117,6 +122,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, .h1 {
@@ -161,6 +167,15 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+}
+
+.title-header {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-caps:all-small-caps;
+  transform: scaleY(3);
+        /* transform-origin: 0 0; */
+        /* margin-top: -30%; */
+        margin-bottom: 10%
 }
 
 p {
@@ -489,6 +504,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .display-1 {
@@ -536,7 +552,7 @@ progress {
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: calc(1.025rem + 2.1vw);
   font-weight: 300;
   line-height: 1.2;
 }
@@ -3623,7 +3639,7 @@ textarea.form-control-lg {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  color: rgb(var(--cooler-palette5));
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3752,6 +3768,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  border-bottom: 5px dashed rgb(var(--cooler-palette2));
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4138,7 +4155,7 @@ textarea.form-control-lg {
 }
 
 .navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-color: rgba(27, 1, 1, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
@@ -7782,8 +7799,13 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top:3rem !important;
   padding-bottom: 3rem !important;
+}
+
+.py-6 {
+  padding-top: 1rem !important;
+  padding-bottom: 13rem !important;
 }
 
 .pt-0 {
@@ -8035,7 +8057,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--cooler-palette1), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -8161,7 +8183,8 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--cooler-palette1), var(--bs-bg-opacity)) !important;
+  /*background: url('../assets/TopSplash2.jpg');*/
 }
 
 .bg-black {
@@ -8182,6 +8205,30 @@ textarea.form-control-lg {
 .bg-transparent {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
+}
+
+.bg-cooler1 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--cooler-palette1), var(--bs-bg-opacity)) !important;
+}
+
+.bg-cooler2 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--cooler-palette2), var(--bs-bg-opacity)) !important;
+}
+
+.bg-cooler3 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--cooler-palette3), var(--bs-bg-opacity)) !important;
+}
+.bg-cooler4 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--cooler-palette4), var(--bs-bg-opacity)) !important;
+}
+
+.bg-cooler5 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--cooler-palette5), var(--bs-bg-opacity)) !important;
 }
 
 .bg-opacity-10 {
@@ -10824,9 +10871,30 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.bg-image-full {
+
+.bg-image-topSplash {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+}
+
+.bg-image-full {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top;
+  background-size: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: auto;
+  max-width: 50%;
+  height: auto;
 }
