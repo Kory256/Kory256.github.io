@@ -10898,3 +10898,95 @@ textarea.form-control-lg {
   max-width: 50%;
   height: auto;
 }
+
+.animate {
+  max-width: 25%;;
+}
+
+/* section {
+  position: relative;
+} */
+
+section img {
+  position: absolute;
+}
+
+.top {
+  animation-name: fade-top;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+
+.bottom {
+  animation-name: fade-bottom;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+
+@keyframes fade-top {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container-anime{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 50%;
+  height: 50%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto; 
+  display: inline-block
+}
+
+/* .container-anime img{
+  width: 25%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.gallery-anime {
+  display:inline-table;
+  flex-direction:row ;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.gallery-anime img {
+  width: 25%;
+  /* max-width: 25%; */
+  height: auto;
+}
