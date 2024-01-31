@@ -10877,6 +10877,8 @@ textarea.form-control-lg {
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+  top: 110px;
+  height: 350px;
 }
 
 .bg-image-full {
