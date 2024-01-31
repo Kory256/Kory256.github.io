@@ -10947,8 +10947,6 @@ textarea.form-control-lg {
 }
 
 .container-anime{
-  height: 100%;
-  width:auto;
   max-width: 30%;
   padding-bottom: 1rem;
   margin-left: auto;
@@ -10961,12 +10959,12 @@ textarea.form-control-lg {
 }
 
 .image-stack-top {
-  grid-column: 1 / span 8;
+  grid-column: 1 / span 10;
   grid-row: 1;
   z-index:1;
 }
 .image-stack-bottom {
-  grid-column: 1 / span 8;
+  grid-column: 1 / span 10;
   grid-row: 1;
   z-index:1;
 }
