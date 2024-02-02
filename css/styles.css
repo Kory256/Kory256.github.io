@@ -10896,7 +10896,7 @@ textarea.form-control-lg {
 }
 
 .gallery img {
-  width: auto;
+  width: 100%;
   max-width: 50%;
   height: auto;
 }
