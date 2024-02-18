@@ -7567,6 +7567,11 @@ textarea.form-control-lg {
   margin-left: 3rem !important;
 }
 
+.mx-7 {
+  margin-right: 7rem !important;
+  margin-left: 7rem !important;
+}
+
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
@@ -10896,8 +10901,9 @@ textarea.form-control-lg {
 }
 
 .gallery img {
-  width: 100%;
-  max-width: 50%;
+  /* width: 100%; */
+  /* max-width: 50%; */
+  width: 50%;
   height: auto;
 }
 
