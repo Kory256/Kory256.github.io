@@ -563,9 +563,9 @@ progress {
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.075rem + 1.5vw);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.0;
 }
 @media (min-width: 1200px) {
   .display-6 {
@@ -10956,7 +10956,7 @@ textarea.form-control-lg {
 
 .container-anime{
   max-width: 30%;
-  height: 100%
+  height: 100%;
   /* padding-bottom: 1rem; */
   margin-left: auto;
   margin-right: auto;
@@ -10982,4 +10982,23 @@ textarea.form-control-lg {
   width: 100%;
   /* max-width: 25%; */
   height: auto;
+}
+
+.tourDates {
+  font-size: calc(1.075rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.0;
+  font-family: 'courier-std';
+  color: #000
+}
+
+.tourPlaces {
+  font-size: calc(1.075rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.0;
+  font-family: 'DrukWideHeavy';
+  font-style: italic;
+  font-weight: 400;
+
+  color: #000
 }
