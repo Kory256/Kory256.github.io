@@ -10889,8 +10889,8 @@ textarea.form-control-lg {
 .bg-image-full {
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: top;
-  background-size: cover;
+  background-position: center;
+  background-size:cover;
 }
 
 .gallery {
